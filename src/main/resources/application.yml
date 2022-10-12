@@ -1,4 +1,13 @@
 spring:
+  profiles:
+    active: "test"
+  main:
+    banner-mode: "off"
+
+---
+
+spring:
+  profiles: test
   h2:
     console:
     enabled: true
@@ -15,4 +24,3 @@ spring:
         format_sql: true
     hibernate:
       ddl-auto: update
-
