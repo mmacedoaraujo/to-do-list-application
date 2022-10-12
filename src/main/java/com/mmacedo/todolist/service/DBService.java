@@ -1,7 +1,7 @@
-package com.mmacedo.todolist.services;
+package com.mmacedo.todolist.service;
 
 import com.mmacedo.todolist.domain.Todo;
-import com.mmacedo.todolist.repositories.TodoRepository;
+import com.mmacedo.todolist.repository.TodoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.mmacedo.todolist.repositories;
+package com.mmacedo.todolist.repository;
 
 import com.mmacedo.todolist.domain.Todo;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,6 +1,6 @@
 package com.mmacedo.todolist.config;
 
-import com.mmacedo.todolist.services.DBService;
+import com.mmacedo.todolist.service.DBService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
