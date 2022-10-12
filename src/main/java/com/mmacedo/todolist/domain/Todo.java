@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
-@Table(name = "todo-list_table")
+@Table(name = "todo_db")
 @Getter
 @Setter
 @ToString
