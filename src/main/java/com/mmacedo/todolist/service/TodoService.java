@@ -24,4 +24,8 @@ public class TodoService {
     public List<Todo> listFinishedTasks() {
         return repository.listFinishedTasks();
     }
+
+    public List<Todo> listAll() {
+        return repository.findAll();
+    }
 }

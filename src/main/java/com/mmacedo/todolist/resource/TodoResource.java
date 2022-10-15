@@ -40,4 +40,11 @@ public class TodoResource {
         return new ResponseEntity<>(finishedTodosList, HttpStatus.OK);
     }
 
+    @GetMapping
+    public ResponseEntity<List<Todo>> listAll() {
+        List<Todo> todos = service.listAll();
+
+        return new ResponseEntity<>(todos, HttpStatus.OK);
+    }
+
 }
