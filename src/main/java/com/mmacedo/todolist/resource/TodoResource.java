@@ -47,12 +47,18 @@ public class TodoResource {
     }
 
     @PostMapping
-    public ResponseEntity<Todo> Create(@RequestBody Todo todo) {
+    public ResponseEntity<Todo> create(@RequestBody Todo todo) {
         Todo createdTodo = service.create(todo);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
                 .path("/{id}")
                 .buildAndExpand(todo.getId()).toUri();
         return ResponseEntity.created(uri).body(createdTodo);
+    }
+
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Integer id) {
+        service.delete(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
 }
