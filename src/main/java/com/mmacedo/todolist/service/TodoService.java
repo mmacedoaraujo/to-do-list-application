@@ -28,4 +28,9 @@ public class TodoService {
     public List<Todo> listAll() {
         return repository.findAll();
     }
+
+    public Todo create(Todo todo) {
+        todo.setId(null);
+        return repository.save(todo);
+    }
 }
