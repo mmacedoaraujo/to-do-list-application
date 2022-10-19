@@ -2,6 +2,7 @@ package com.mmacedo.todolist.service;
 
 import com.mmacedo.todolist.domain.Todo;
 import com.mmacedo.todolist.repository.TodoRepository;
+import com.mmacedo.todolist.service.exceptions.ObjectNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +15,8 @@ public class TodoService {
     private final TodoRepository repository;
 
     public Todo findById(Integer id) {
-        return repository.findById(id).orElse(null);
+        return repository.findById(id)
+                .orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado! Id: " + id + ", tipo: " + Todo.class.getName()));
     }
 
     public List<Todo> listOpenTasks() {
