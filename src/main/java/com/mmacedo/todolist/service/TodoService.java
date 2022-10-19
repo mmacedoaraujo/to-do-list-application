@@ -37,6 +37,16 @@ public class TodoService {
     }
 
     public void delete(Integer id) {
+        findById(id);
         repository.deleteById(id);
+    }
+
+    public void update(Integer id, Todo todo) {
+        Todo foundTodo = findById(id);
+        foundTodo.setTitle(todo.getTitle());
+        foundTodo.setDescription(todo.getDescription());
+        foundTodo.setFinished(todo.getFinished());
+        foundTodo.setDateToFinishTask(todo.getDateToFinishTask());
+        repository.save(foundTodo);
     }
 }

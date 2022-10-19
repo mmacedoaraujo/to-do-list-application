@@ -61,4 +61,10 @@ public class TodoResource {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<Void> update(@PathVariable Integer id, @RequestBody Todo todo) {
+        service.update(id, todo);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
 }
