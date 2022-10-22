@@ -1,11 +1,12 @@
 package com.mmacedo.todolist.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Objects;
 
 @Entity
@@ -22,7 +23,8 @@ public class Todo implements Serializable {
     private Integer id;
     private String title;
     private String description;
-    private LocalDateTime dateToFinishTask;
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private Date dateToFinishTask;
     private Boolean finished;
 
     @Override
