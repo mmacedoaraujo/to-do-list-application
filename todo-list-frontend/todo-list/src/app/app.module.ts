@@ -5,7 +5,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./components/header/header.component";
 
-2 
+2;
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatCardModule } from "@angular/material/card";
@@ -14,6 +14,7 @@ import { MatCommonModule } from "@angular/material/core";
 import { MatIconModule } from "@angular/material/icon";
 import { FooterComponent } from "./components/footer/footer.component";
 import { ReadAllComponent } from "./components/read-all/read-all.component";
+import { MatBadgeModule } from "@angular/material/badge";
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ReadAllComponent } from "./components/read-all/read-all.component";
     MatButtonModule,
     MatCommonModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent],

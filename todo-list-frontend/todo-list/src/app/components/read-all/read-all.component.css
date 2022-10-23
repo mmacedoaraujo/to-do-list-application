@@ -3,13 +3,25 @@
     margin: auto;
 }
 
+.badge {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge button {
+    margin: auto;
+    width: 100%;
+}
+
 .content {
     width: 100%;
 }
 
 .new-task {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 mat-card {
