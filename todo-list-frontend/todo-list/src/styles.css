@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 700px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 0),
+    rgb(177, 80, 0) 25%,
+    rgb(11, 0, 31) 25.3%,
+    rgb(143, 57, 0) 50%,
+    rgb(39, 0, 37) 50.3%,
+    rgb(110, 40, 0) 75%,
+    rgb(37, 0, 28) 75.3%
+  );
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

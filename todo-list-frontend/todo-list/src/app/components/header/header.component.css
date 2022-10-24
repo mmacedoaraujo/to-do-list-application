@@ -1,22 +1,25 @@
 img {
-    padding-top: 3rem;
-    height: 8rem;
+  padding-top: 3rem;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  height: 8rem;
 }
 
 .header {
-    justify-content: left;
-    height: 10%;
-
+  justify-content: left;
+  background-color: black;
 }
 
 span {
-    display: flex;
-    align-items:  center;
+  display: flex;
+  align-items: center;
 }
 
 h1 {
-    padding-top: 1rem;
-    padding-left: 1.2rem;
-    padding-bottom: 1.2rem;
-    font-size: 2rem;
+  padding-top: 1rem;
+  padding-left: 1.2rem;
+  padding-bottom: 1.2rem;
+  font-size: 2rem;
+  color: aliceblue;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
 }
