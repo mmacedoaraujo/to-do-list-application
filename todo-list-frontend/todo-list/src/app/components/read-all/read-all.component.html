@@ -10,7 +10,7 @@
 
   <div class="content" *ngFor="let item of list">
     <mat-card class="example-card mat-elevation-z8">
-      <p>Data para finalizar: {{ item.dateToFinishTask }}</p>
+      <p>Date to finish: {{ item.dateToFinishTask }}</p>
       <mat-card-header>
         <mat-card-title>{{ item.title }}</mat-card-title>
         <mat-card-subtitle>{{ item.description }}</mat-card-subtitle>
@@ -23,7 +23,7 @@
         <button mat-mini-fab color="accent">
           <mat-icon>edit</mat-icon>
         </button>
-        <button mat-mini-fab color="warn">
+        <button (click)="delete(item.id)" mat-mini-fab color="warn">
           <mat-icon>delete</mat-icon>
         </button>
       </div>

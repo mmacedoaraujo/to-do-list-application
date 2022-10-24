@@ -15,6 +15,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { FooterComponent } from "./components/footer/footer.component";
 import { ReadAllComponent } from "./components/read-all/read-all.component";
 import { MatBadgeModule } from "@angular/material/badge";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MatBadgeModule } from "@angular/material/badge";
     MatCommonModule,
     MatIconModule,
     HttpClientModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
