@@ -1,11 +1,13 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { Todo } from "src/app/models/todo";
 import { TodoService } from "src/app/services/todo.service";
+import { FinishedComponent } from "../finished/finished.component";
 
 @Component({
-  selector: "app-read-all",
-  templateUrl: "./read-all.component.html",
-  styleUrls: ["./read-all.component.css"],
+  selector: 'app-read-all',
+  templateUrl: './read-all.component.html',
+  styleUrls: ['./read-all.component.css'],
 })
 export class ReadAllComponent implements OnInit {
   closed = 0;
@@ -13,7 +15,7 @@ export class ReadAllComponent implements OnInit {
   list: Todo[] = [];
   finishedList: Todo[] = [];
 
-  constructor(private service: TodoService) {}
+  constructor(private service: TodoService, private router: Router) {}
 
   ngOnInit(): void {
     this.findAll();
@@ -39,6 +41,10 @@ export class ReadAllComponent implements OnInit {
         this.list = this.list.filter(todo => todo.id !== id);
       }
     })
+  }
+
+  navigateToFinishedTasks(): void {
+    this.router.navigate(['finished'])
   }
   
 }

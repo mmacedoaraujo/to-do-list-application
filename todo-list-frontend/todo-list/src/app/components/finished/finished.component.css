@@ -2,15 +2,10 @@
   width: 75%;
   margin: auto;
 }
-
-.badge {
+.home {
   margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.badge button {
+.home button {
   margin: auto;
   width: 100%;
 }
@@ -29,10 +24,15 @@ mat-card {
   padding: 0.2rem;
 }
 
+h1 {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
 p {
   text-align: end;
   font-weight: 300;
-  color: rgb(151, 146, 146);
+  color: rgb(114, 111, 111);
   margin-bottom: 0;
 }
 
