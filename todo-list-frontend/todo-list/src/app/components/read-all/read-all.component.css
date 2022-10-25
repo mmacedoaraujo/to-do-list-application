@@ -37,7 +37,7 @@
 }
 
 .finished-tasks:hover {
-  background-color: rgb(247, 247, 247);
+  background-color: rgba(0, 0, 0, 0.692);
 }
 
 .mat-badge-content {
@@ -61,11 +61,15 @@
   color: aliceblue;
 }
 
+.new-task:hover {
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
 mat-card {
   margin-top: 0.8rem;
   padding: 0.2rem;
   /* From https://css.glass */
-  background: rgba(134, 114, 89, 0.425);
+  background: rgba(0, 0, 0, 0.425);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(151, 0, 0, 0.1);
   backdrop-filter: blur(7.3px);
