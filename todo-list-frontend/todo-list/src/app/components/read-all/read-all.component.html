@@ -1,9 +1,7 @@
 <div class="container">
-  <div class="badge mat-elevation-z8">
-    <button (click)="navigateToFinishedTasks()" mat-stroked-button color="primary" matBadge="{{ closed }}">
+    <button class="finished-tasks mat-elevation-z8" (click)="navigateToFinishedTasks()" matBadge="{{ closed }}">
       Finished Tasks
     </button>
-  </div>
   <button class="new-task mat-elevation-z8" mat-stroked-button color="primary">
     New Task
   </button>

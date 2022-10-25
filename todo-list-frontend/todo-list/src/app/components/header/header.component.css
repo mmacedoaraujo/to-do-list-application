@@ -1,13 +1,13 @@
 img {
   padding-top: 3rem;
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222);
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+  filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
   height: 8rem;
 }
 
 .header {
   justify-content: left;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 span {
