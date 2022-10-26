@@ -62,9 +62,9 @@ public class TodoResource {
     }
 
     @PutMapping(value = "/{id}")
-    public ResponseEntity<Void> update(@PathVariable Integer id, @RequestBody Todo todo) {
-        service.update(id, todo);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    public ResponseEntity<Todo> update(@PathVariable Integer id, @RequestBody Todo todo) {
+        Todo updatedTodo = service.update(id, todo);
+        return ResponseEntity.ok().body(updatedTodo);
     }
 
 }

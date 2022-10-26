@@ -12,9 +12,9 @@ import java.text.ParseException;
 @Profile("test")
 @RequiredArgsConstructor
 public class TestConfig {
-
     private final DBService dbService;
 
+    @Bean
     public boolean instantiateMethod() throws ParseException {
         this.dbService.databaseInstantiationMethod();
         return true;

@@ -2,7 +2,7 @@
 
 html,
 body {
-  height: 700px;
+  height: 100%;
   background: linear-gradient(
     to bottom right,
     rgb(0, 0, 0),

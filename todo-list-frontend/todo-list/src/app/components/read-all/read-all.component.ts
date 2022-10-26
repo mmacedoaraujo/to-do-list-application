@@ -1,13 +1,14 @@
 import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
+import { Router, TitleStrategy } from "@angular/router";
+import { Observable } from "rxjs";
 import { Todo } from "src/app/models/todo";
 import { TodoService } from "src/app/services/todo.service";
 import { FinishedComponent } from "../finished/finished.component";
 
 @Component({
-  selector: 'app-read-all',
-  templateUrl: './read-all.component.html',
-  styleUrls: ['./read-all.component.css'],
+  selector: "app-read-all",
+  templateUrl: "./read-all.component.html",
+  styleUrls: ["./read-all.component.css"],
 })
 export class ReadAllComponent implements OnInit {
   closed = 0;
@@ -34,17 +35,25 @@ export class ReadAllComponent implements OnInit {
     });
   }
 
+  finishTask(item: Todo): void {
+    item.finished = true
+    this.service.update(item).subscribe(() => {
+      this.service.message("Task completed!");
+      this.list = this.list.filter((todo) => todo.id !== item.id);
+      this.closed++;
+    });
+  }
+
   delete(id: any): void {
     this.service.delete(id).subscribe((answer) => {
-      if(answer === null) {
-        this.service.message("Deleted task successfully!")
-        this.list = this.list.filter(todo => todo.id !== id);
+      if (answer === null) {
+        this.service.message("Deleted task successfully!");
+        this.list = this.list.filter((todo) => todo.id !== id);
       }
-    })
+    });
   }
 
   navigateToFinishedTasks(): void {
-    this.router.navigate(['finished'])
+    this.router.navigate(["finished"]);
   }
-  
 }

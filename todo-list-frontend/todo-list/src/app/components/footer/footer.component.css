@@ -7,8 +7,5 @@
     height: 5%;
     position: fixed;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.637);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12.4px);
-    -webkit-backdrop-filter: blur(12.4px);
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
 }
