@@ -1,5 +1,5 @@
 <div class="container">
-    <button class="finished-tasks mat-elevation-z8" (click)="navigateToFinishedTasks()" matBadge="{{ closed }}">
+    <button class="finished-tasks" (click)="navigateToFinishedTasks()" matBadge="{{ closed }}">
       Finished Tasks
     </button>
   <button class="new-task mat-elevation-z8" mat-stroked-button color="primary">
@@ -15,7 +15,7 @@
       </mat-card-header>
 
       <div class="actions">
-        <button (click)="finishTask(item)" mat-mini-fab color="primary">
+        <button class="complete-button" (click)="finishTask(item)" mat-mini-fab color="primary">
           <mat-icon>done</mat-icon>
         </button>
         <button mat-mini-fab color="accent">

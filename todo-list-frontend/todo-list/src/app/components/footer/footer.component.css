@@ -7,5 +7,5 @@
     height: 5%;
     position: fixed;
     bottom: 0;
-    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    background: linear-gradient(to top, rgba(255, 238, 223, 0.603), transparent);
 }

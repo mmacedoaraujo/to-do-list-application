@@ -2,12 +2,19 @@ img {
   padding-top: 3rem;
   -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
   filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
-  height: 8rem;
+  height: 5rem;
 }
 
 .header {
-  justify-content: left;
-  background-color: rgb(0, 0, 0);
+  margin: auto;
+  width: 75%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(255, 230, 230, 0.452);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(7.3px);
+  color: aliceblue;
 }
 
 span {
@@ -16,8 +23,10 @@ span {
 }
 
 h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   padding-top: 1rem;
-  padding-left: 1.2rem;
   padding-bottom: 1.2rem;
   font-size: 2rem;
   color: aliceblue;
