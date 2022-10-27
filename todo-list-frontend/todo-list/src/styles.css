@@ -7,12 +7,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: moveIt 300s linear infinite;
+  animation: moveIt 60s linear infinite;
 }
 
 @keyframes moveIt {
-  from {background-position: bottom left;}
-  to {background-position: top right;}
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
 }
 
 body {

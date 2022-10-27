@@ -28,9 +28,14 @@
   border-radius: 10px;
   border: 0;
   cursor: pointer;
-  background: rgba(255, 214, 245, 0.774);
+  background: linear-gradient(
+    to right,
+    rgba(255, 166, 93, 0.575),
+    rgba(95, 159, 255, 0.486),
+    rgba(255, 166, 93, 0.575)
+  );
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(151, 0, 0, 0.1);
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.664));
   backdrop-filter: blur(7.3px);
   -webkit-backdrop-filter: blur(7.3px);
   color: aliceblue;
@@ -55,9 +60,14 @@
   border-radius: 10px;
   border: 0;
   cursor: pointer;
-  background: rgba(255, 214, 245, 0.774);
+  background: linear-gradient(
+    to right,
+    rgba(255, 166, 93, 0.575),
+    rgba(95, 159, 255, 0.486),
+    rgba(255, 166, 93, 0.575)
+  );
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(151, 0, 0, 0.1);
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.445));
   backdrop-filter: blur(7.3px);
   -webkit-backdrop-filter: blur(7.3px);
   color: aliceblue;
@@ -71,9 +81,14 @@
 mat-card {
   margin-top: 0.8rem;
   padding: 1rem;
-  background: rgba(255, 237, 251, 0.616);
+  background: linear-gradient(
+    to right,
+    rgba(255, 166, 93, 0.575),
+    rgba(95, 159, 255, 0.486),
+    rgba(255, 166, 93, 0.575)
+  );
   border-radius: 30px;
-  box-shadow: 0 4px 30px rgba(151, 0, 0, 0.1);
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.445));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
   color: aliceblue;
@@ -92,18 +107,16 @@ p {
 }
 
 .actions button {
-  background-color: aliceblue;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 223, 174);
   margin-left: 10px;
   margin-bottom: 10px;
-  background: rgba(0, 0, 0, 0.39);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: rgba(95, 159, 255, 0);
+  border-radius: 20px;
   backdrop-filter: blur(12.4px);
   -webkit-backdrop-filter: blur(12.4px);
 }
 
-.actions :focus {
-  background-color: rgb(255, 255, 255);
-  transition-duration: 2s;
+.actions button :hover {
+  transition-duration: 800ms;
+  color: aliceblue;
 }
