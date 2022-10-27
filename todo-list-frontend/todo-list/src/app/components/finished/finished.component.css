@@ -19,7 +19,12 @@
   border-radius: 10px;
   border: 0;
   cursor: pointer;
-  background: rgba(255, 214, 245, 0.774);
+  background: linear-gradient(
+    to right,
+    rgba(255, 166, 93, 0.575),
+    rgba(95, 159, 255, 0.486),
+    rgba(255, 166, 93, 0.575)
+  );
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(151, 0, 0, 0.1);
   backdrop-filter: blur(7.3px);
@@ -30,7 +35,9 @@
 .home button {
   border: 0;
   width: 100%;
-  color: rgb(110, 89, 158)
+  color: rgb(240, 234, 255);
+  font-size: 20px;
+  font-weight: 200;
 }
 
 mat-card {
@@ -38,7 +45,12 @@ mat-card {
   padding: 0.2rem;
   margin-top: 0.8rem;
   padding: 1rem;
-  background: rgba(255, 237, 251, 0.616);
+  background: linear-gradient(
+    to right,
+    rgba(255, 166, 93, 0.575),
+    rgba(95, 159, 255, 0.486),
+    rgba(255, 166, 93, 0.575)
+  );
   border-radius: 30px;
   box-shadow: 0 4px 30px rgba(151, 0, 0, 0.1);
   backdrop-filter: blur(20px);

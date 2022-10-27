@@ -1,8 +1,9 @@
 <mat-toolbar class="header mat-elevation-z8">
-    <span>
-        <img src="assets\img\to-do.png" alt="">
-    </span>
-    <span>
-        <h1>Todo List Application</h1>
-    </span>
+  <span class="header-text">
+    <h1>Things to do</h1>
+  </span>
+  <span>
+    <img src="assets/img/to-do.png" alt="">
+  </span>
+  <span class="clock">{{ rxTime | date: "hh:mm a" }}</span>
 </mat-toolbar>

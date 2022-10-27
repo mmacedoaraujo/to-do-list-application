@@ -1,11 +1,23 @@
 .footer {
-    justify-content: center;
-    color: white;
-    font-weight: 500;
-    font-size: 15px;
-    padding-top: 10px;
-    height: 5%;
-    position: fixed;
-    bottom: 0;
-    background: linear-gradient(to top, rgba(255, 238, 223, 0.603), transparent);
+  width: 40%;
+  margin: auto;
+  margin-top: 5rem;
+  justify-content: center;
+  color: white;
+  height: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  padding-top: 10px;
+  padding: 1rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 166, 93, 0.575),
+    rgba(8, 58, 133, 0.486),
+    rgba(255, 166, 93, 0.575)
+  );
+  border-radius: 30px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.445));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(7.3px);
+  color: aliceblue;
 }
