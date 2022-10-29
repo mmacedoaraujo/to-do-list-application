@@ -19,6 +19,32 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  color: black;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgb(236, 117, 6) 40%,
+    rgb(0, 38, 95)
+    
+  );
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: rgb(248, 142, 93);
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(238, 103, 25);
+}
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;

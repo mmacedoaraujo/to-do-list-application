@@ -23,17 +23,17 @@
   text-align: center;
   height: 50px;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 4rem;
   background: white;
   color: black;
   border-radius: 10px;
   border: 0;
   cursor: pointer;
   background: linear-gradient(
-    to right,
-    rgba(255, 166, 93, 0.575),
-    rgba(95, 159, 255, 0.486),
-    rgba(255, 166, 93, 0.575)
+    45deg,
+    #ffc8b241,
+    rgba(38, 0, 143, 0.288),
+    #ff935580
   );
   border-radius: 16px;
   -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.664));
@@ -62,10 +62,10 @@
   border: 0;
   cursor: pointer;
   background: linear-gradient(
-    to right,
-    rgba(255, 166, 93, 0.575),
-    rgba(95, 159, 255, 0.486),
-    rgba(255, 166, 93, 0.575)
+    45deg,
+    #ffc8b241,
+    rgba(38, 0, 143, 0.288),
+    #ff935580
   );
   border-radius: 16px;
   -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.445));
@@ -82,12 +82,13 @@
 mat-card {
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
-  padding: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
   background: linear-gradient(
-    to right,
-    rgba(255, 166, 93, 0.575),
-    rgba(95, 159, 255, 0.486),
-    rgba(255, 166, 93, 0.575)
+    270deg,
+    #ffc8b241,
+    rgba(38, 0, 143, 0.288),
+    #ff935580
   );
   border-radius: 30px;
   -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.445));
@@ -97,10 +98,13 @@ mat-card {
 }
 
 p {
-  text-align: end;
+  color: aliceblue;
+  padding: auto;
   font-weight: 300;
-  color: rgb(151, 146, 146);
-  margin-bottom: 0;
+}
+
+mat-card-subtitle {
+  color: aliceblue;
 }
 
 .actions {

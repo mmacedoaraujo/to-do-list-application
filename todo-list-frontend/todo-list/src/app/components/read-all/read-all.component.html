@@ -1,21 +1,28 @@
 <div class="container">
-    <button class="finished-tasks" (click)="navigateToFinishedTasks()" matBadge="{{ closed }}">
-      Finished Tasks
-    </button>
+  <button
+    class="finished-tasks"
+    (click)="navigateToFinishedTasks()"
+    matBadge="{{ closed }}"
+  >
+    Finished Tasks
+  </button>
   <button class="new-task mat-elevation-z8" mat-stroked-button color="primary">
     New Task
   </button>
 
   <div class="content" *ngFor="let item of list">
     <mat-card class="example-card mat-elevation-z8">
+      <mat-card-title>{{ item.title }}</mat-card-title>
       <p>Date to finish: {{ item.dateToFinishTask }}</p>
-      <mat-card-header>
-        <mat-card-title>{{ item.title }}</mat-card-title>
-        <mat-card-subtitle>{{ item.description }}</mat-card-subtitle>
-      </mat-card-header>
+      <mat-card-subtitle>{{ item.description }}</mat-card-subtitle>
 
       <div class="actions">
-        <button class="complete-button" (click)="finishTask(item)" mat-mini-fab color="primary">
+        <button
+          class="complete-button"
+          (click)="finishTask(item)"
+          mat-mini-fab
+          color="primary"
+        >
           <mat-icon>done</mat-icon>
         </button>
         <button mat-mini-fab color="accent">

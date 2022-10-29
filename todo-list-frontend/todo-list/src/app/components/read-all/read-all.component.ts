@@ -1,9 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { Router, TitleStrategy } from "@angular/router";
-import { Observable } from "rxjs";
+import { Router } from "@angular/router";
 import { Todo } from "src/app/models/todo";
 import { TodoService } from "src/app/services/todo.service";
-import { FinishedComponent } from "../finished/finished.component";
 
 @Component({
   selector: "app-read-all",
@@ -36,7 +34,7 @@ export class ReadAllComponent implements OnInit {
   }
 
   finishTask(item: Todo): void {
-    item.finished = true
+    item.finished = true;
     this.service.update(item).subscribe(() => {
       this.service.message("Task completed!");
       this.list = this.list.filter((todo) => todo.id !== item.id);

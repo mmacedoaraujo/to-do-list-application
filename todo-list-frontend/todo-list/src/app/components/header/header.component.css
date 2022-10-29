@@ -1,19 +1,12 @@
 .header {
+  height: 100px;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: space-between;
-  background: linear-gradient(
-    to right,
-    rgba(255, 166, 93, 0.575),
-    rgba(95, 159, 255, 0.486),
-    rgba(255, 166, 93, 0.575)
-  );
+  background-color: transparent;
   border-radius: 16px;
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.664));
-  backdrop-filter: blur(7.3px);
-  -webkit-backdrop-filter: blur(7.3px);
   color: aliceblue;
   
 }
@@ -23,14 +16,18 @@ h1 {
 }
 
 .clock {
+  color: #ffe9d3;
   margin-right: 10px;
-  background-color: rgba(238, 185, 124, 0.329);
+  background-color: rgba(255, 167, 109, 0.979);
   border-radius: 16px;
   padding: 10px;
 
 }
 
 img {
-  width: 60px;
-  height: 60px;
+  -webkit-filter: drop-shadow(5px 5px 10px rgb(14, 17, 63));
+  margin-left: 6rem;
+  margin-top: 5rem;
+  width: 200px;
+  height: 200px;
 }
