@@ -1,12 +1,30 @@
 <form action="">
-    <h1>alou</h1>
-    <p>
-        <mat-form-field appearance="fill">
-          <mat-label>Input disabled</mat-label>
-          <input matInput [matDatepicker]="dp3" disabled>
-          <mat-hint>MM/DD/YYYY</mat-hint>
-          <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
-          <mat-datepicker #dp3 disabled="false"></mat-datepicker>
-        </mat-form-field>
-      </p>
+  <h1>Creating new task</h1>
+  <mat-form-field class="date-to-finish" appearance="fill">
+    <mat-label>Input disabled</mat-label>
+    <input matInput [matDatepicker]="dp3" disabled />
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+    <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+  </mat-form-field>
+
+  <div class="inputs">
+    <form class="form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Ex. Pizza" value="Ex. Study algebra" />
+      </mat-form-field>
+    </form>
+
+    <form class="description">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Title</mat-label>
+        <input
+          matInput
+          placeholder="Ex. Pizza"
+          value="Ex. Estudar Spring Boot 2"
+        />
+      </mat-form-field>
+    </form>
+  </div>
 </form>
