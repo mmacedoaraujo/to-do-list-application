@@ -14,7 +14,6 @@ import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { CreateComponent } from "./components/create/create.component";
 import { FinishedComponent } from "./components/finished/finished.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
@@ -29,7 +28,6 @@ import { ReadAllComponent } from "./components/read-all/read-all.component";
     FooterComponent,
     ReadAllComponent,
     FinishedComponent,
-    CreateComponent,
   ],
   imports: [
     BrowserModule,

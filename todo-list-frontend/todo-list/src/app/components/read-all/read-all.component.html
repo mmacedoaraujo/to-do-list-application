@@ -6,9 +6,33 @@
   >
     Finished Tasks
   </button>
-  <button class="new-task mat-elevation-z8" mat-stroked-button color="primary">
-    New Task
-  </button>
+  <div class="new-task-container">
+    <mat-card class="example-card mat-elevation-z8">
+      <mat-form-field class="date-to-finish" appearance="fill">
+        <mat-label>Input disabled</mat-label>
+        <input matInput [matDatepicker]="dp3" disabled />
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+        <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+      </mat-form-field>
+
+      <div class="forms">
+        <mat-form-field class="form-title" appearance="fill">
+          <mat-label>Title</mat-label>
+          <input matInput placeholder="Ex. Correr" />
+        </mat-form-field>
+
+        <mat-form-field class="form-description" appearance="fill">
+          <mat-label>Description</mat-label>
+          <input matInput placeholder="Ex. Correr 5km hoje" />
+        </mat-form-field>
+      </div>
+      <div class="buttons">
+        <button mat-stroked-button color="primary">Primary</button>
+        <button mat-stroked-button color="warn">Primary</button>
+      </div>
+    </mat-card>
+  </div>
 
   <div class="content" *ngFor="let item of list">
     <mat-card class="example-card mat-elevation-z8">

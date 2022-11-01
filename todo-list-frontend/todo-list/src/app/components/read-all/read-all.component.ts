@@ -54,4 +54,8 @@ export class ReadAllComponent implements OnInit {
   navigateToFinishedTasks(): void {
     this.router.navigate(["finished"]);
   }
+
+  navigatoToCreateNewTask() : void {
+    this.router.navigate(["create"]);
+  }
 }

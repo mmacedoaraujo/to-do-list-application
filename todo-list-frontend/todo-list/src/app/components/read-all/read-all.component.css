@@ -30,10 +30,10 @@
   border: 0;
   cursor: pointer;
   background: linear-gradient(
-    45deg,
-    #ffc8b241,
+    270deg,
+    #ff4800b2,
     rgba(38, 0, 143, 0.288),
-    #ff935580
+    #fa7f38a1
   );
   border-radius: 16px;
   -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.664));
@@ -47,36 +47,25 @@
   background-color: rgba(227, 212, 255, 0.904);
 }
 
-.mat-badge-content {
-  background: white;
-  color: black;
-}
-
-.new-task {
-  height: 50px;
-  width: 100%;
-  margin-top: 1rem;
-  background: white;
-  color: black;
-  border-radius: 10px;
-  border: 0;
-  cursor: pointer;
-  background: linear-gradient(
-    45deg,
-    #ffc8b241,
-    rgba(38, 0, 143, 0.288),
-    #ff935580
-  );
-  border-radius: 16px;
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.445));
-  backdrop-filter: blur(7.3px);
-  -webkit-backdrop-filter: blur(7.3px);
+mat-label {
   color: aliceblue;
 }
 
-.new-task:hover {
-  transition-duration: 2s;
-  background-color: rgba(227, 212, 255, 0.904);
+.form-title {
+  width: 60%;
+}
+
+.form-description {
+  width: 80%;
+}
+
+input {
+  color: rgb(208, 213, 218);
+}
+
+.mat-badge-content {
+  background: white;
+  color: black;
 }
 
 mat-card {
@@ -86,21 +75,24 @@ mat-card {
   padding-left: 2rem;
   background: linear-gradient(
     270deg,
-    #ffc8b241,
+    #ff4800b2,
     rgba(38, 0, 143, 0.288),
-    #ff935580
+    #fa7f38a1
   );
   border-radius: 30px;
   -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.445));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
-  color: aliceblue;
 }
 
 p {
   color: aliceblue;
   padding: auto;
   font-weight: 300;
+}
+
+mat-card-title {
+  color: aliceblue;
 }
 
 mat-card-subtitle {
