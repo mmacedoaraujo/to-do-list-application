@@ -1,5 +1,6 @@
 import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import { MatBadgeModule } from "@angular/material/badge";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
@@ -45,6 +46,7 @@ import { ReadAllComponent } from "./components/read-all/read-all.component";
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

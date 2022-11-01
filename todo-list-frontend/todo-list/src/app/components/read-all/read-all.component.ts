@@ -10,15 +10,22 @@ import { TodoService } from "src/app/services/todo.service";
 })
 export class ReadAllComponent implements OnInit {
   closed = 0;
+  todo: Todo = {
+    title: "",
+    description: "",
+    dateToFinishTask: "",
+    finished: false,
+  };
   list: Todo[] = [];
   finishedList: Todo[] = [];
-  description:string = "";
+  description: string = "";
   value: any;
 
   constructor(private service: TodoService, private router: Router) {}
 
   ngOnInit(): void {
     this.findAll();
+    this.refreshPage();
   }
 
   findAll(): void {
@@ -51,14 +58,40 @@ export class ReadAllComponent implements OnInit {
       }
     });
   }
-  clear() {
-    this.description = '';
+
+  create() {
+    this.formatDate();
+    this.service.create(this.todo).subscribe(
+      (answer) => {
+        this.service.message("New task added successfully");
+        this.clear();
+      },
+      (err) => {
+        this.service.message("Failed to create new task");
+        this.clear();
+      }
+    );
+    this.refreshPage();
   }
+
+  clear() {
+    this.todo.description = "";
+    this.todo.title = "";
+    this.todo.dateToFinishTask.value = "";
+  }
+
+  formatDate(): void {
+    let date = new Date(this.todo.dateToFinishTask);
+    this.todo.dateToFinishTask = `${date.getDate()}/${
+      date.getMonth() + 1
+    }/${date.getFullYear()}`;
+  }
+
   navigateToFinishedTasks(): void {
     this.router.navigate(["finished"]);
   }
 
-  navigatoToCreateNewTask(): void {
-    this.router.navigate(["create"]);
+  refreshPage(): void {
+    this.router.navigate([""]);
   }
 }

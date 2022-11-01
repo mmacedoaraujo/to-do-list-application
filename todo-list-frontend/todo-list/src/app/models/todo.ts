@@ -2,6 +2,6 @@ export interface Todo {
   id?: String;
   title: String;
   description?: String;
-  dateToFinishTask: Date;
+  dateToFinishTask: any;
   finished: Boolean;
 }
