@@ -20,10 +20,10 @@
   border: 0;
   cursor: pointer;
   background: linear-gradient(
-    to right,
-    rgba(255, 166, 93, 0.575),
-    rgba(95, 159, 255, 0.486),
-    rgba(255, 166, 93, 0.575)
+    270deg,
+    #ffc8b241,
+    rgba(38, 0, 143, 0.288),
+    #ff935580
   );
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(151, 0, 0, 0.1);
@@ -46,10 +46,10 @@ mat-card {
   margin-top: 0.8rem;
   padding: 1rem;
   background: linear-gradient(
-    to right,
-    rgba(255, 166, 93, 0.575),
-    rgba(95, 159, 255, 0.486),
-    rgba(255, 166, 93, 0.575)
+    270deg,
+    #ffc8b241,
+    rgba(38, 0, 143, 0.288),
+    #ff935580
   );
   border-radius: 30px;
   box-shadow: 0 4px 30px rgba(151, 0, 0, 0.1);

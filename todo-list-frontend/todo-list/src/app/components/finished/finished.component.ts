@@ -5,8 +5,8 @@ import { TodoService } from "src/app/services/todo.service";
 
 @Component({
   selector: "app-finished",
-  templateUrl: "./finished.component.html",
-  styleUrls: ["./finished.component.css"],
+  templateUrl: "finished.component.html",
+  styleUrls: ["finished.component.css"],
 })
 export class FinishedComponent implements OnInit {
   finishedList: Todo[] = [];
