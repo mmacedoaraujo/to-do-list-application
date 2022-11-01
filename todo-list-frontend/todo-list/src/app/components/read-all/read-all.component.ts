@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 import { Todo } from "src/app/models/todo";
 import { TodoService } from "src/app/services/todo.service";
@@ -10,9 +10,10 @@ import { TodoService } from "src/app/services/todo.service";
 })
 export class ReadAllComponent implements OnInit {
   closed = 0;
-
   list: Todo[] = [];
   finishedList: Todo[] = [];
+  description:string = "";
+  value: any;
 
   constructor(private service: TodoService, private router: Router) {}
 
@@ -50,12 +51,14 @@ export class ReadAllComponent implements OnInit {
       }
     });
   }
-
+  clear() {
+    this.description = '';
+  }
   navigateToFinishedTasks(): void {
     this.router.navigate(["finished"]);
   }
 
-  navigatoToCreateNewTask() : void {
+  navigatoToCreateNewTask(): void {
     this.router.navigate(["create"]);
   }
 }
