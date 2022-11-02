@@ -19,6 +19,7 @@ import { FinishedComponent } from "./components/finished/finished.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { ReadAllComponent } from "./components/read-all/read-all.component";
+import { UpdateComponent } from './components/update/update.component';
 
 2;
 
@@ -29,6 +30,7 @@ import { ReadAllComponent } from "./components/read-all/read-all.component";
     FooterComponent,
     ReadAllComponent,
     FinishedComponent,
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,
