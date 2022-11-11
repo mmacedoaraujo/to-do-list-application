@@ -19,3 +19,42 @@
 
 <h2>O que podemos fazer com a aplicação?</h2>
 <p>No atual momento podemos adicionar novas tarefas, editar e excluir tarefas já existentes.</p>
+
+<h2>Instalação</h2>
+
+<h3>Rodando o backend do projeto</h3>
+<p>Clone o projeto com: </p>
+
+```
+ git clone https://github.com/mmacedoaraujo/to-do-list-application.git
+```
+
+<p>Após clonar o repositório na sua máquina, navegue para a pasta do backend:</h3>
+
+```
+ cd todo-list-backend
+```
+
+<p>Em seguida abra-o como projeto Maven em uma IDE</p>
+
+<h3>Rodando o frontend do projeto</h3>
+
+<p>Antes de seguir em frente, instale o <a href="https://nodejs.org/en/">Node.js</a>.</p>
+
+<p>Você pode verificar se o Node foi instalado na sua máquina executando o comando abaixo no terminal: </p>
+
+```
+ node --version
+```
+
+<p>Após clonar o repositório na sua máquina, navegue para a pasta do frontend</h3>
+
+```
+ cd todo-list-frontend
+```
+
+<p>Agora vamos instalar o Command Line Interface ou CLI do Angular com o comando:</h3>
+
+```
+ npm install -g @angular/cli
+```
