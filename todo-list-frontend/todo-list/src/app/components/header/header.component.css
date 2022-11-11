@@ -22,8 +22,8 @@ h1 {
   padding: 10px;
   background: linear-gradient(
     300deg,
-    #2f288db9 40%,
-    #ff5555b4 90%
+    #2f288d69 40%,
+    #ff55555e 90%
   );
   -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.87));
   backdrop-filter: blur(20px);

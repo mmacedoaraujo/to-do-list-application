@@ -154,3 +154,7 @@ mat-card-subtitle {
   transition-duration: 800ms;
   color: aliceblue;
 }
+
+.input {
+  color: aliceblue;
+}

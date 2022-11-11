@@ -71,7 +71,7 @@ export class ReadAllComponent implements OnInit {
         this.clear();
       }
     );
-    this.refreshPage();
+    window.location.reload();
   }
 
   clear() {
