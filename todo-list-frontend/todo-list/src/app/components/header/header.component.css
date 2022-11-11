@@ -21,17 +21,13 @@ h1 {
   border-radius: 16px;
   padding: 10px;
   background: linear-gradient(
-    270deg,
-    #2f288d41 100%,
-    rgba(143, 21, 0, 0.137) 0%,
-    #ff555580 
+    300deg,
+    #2f288db9 40%,
+    #ff5555b4 90%
   );
-  border-radius: 30px;
   -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.87));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
-  color: aliceblue;
-
 }
 
 img {

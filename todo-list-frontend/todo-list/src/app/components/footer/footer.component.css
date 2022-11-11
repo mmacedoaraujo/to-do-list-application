@@ -10,15 +10,13 @@
   margin-bottom: 5vh;
   padding-top: 15px;
   background: linear-gradient(
-    270deg,
-    #2f288d41,
-    rgba(143, 21, 0, 0.137) 100%,
-    #ff555580
+    300deg,
+    #2f288d6c 50%,
+    #ff555580 99%
   );
   border-radius: 30px;
-  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.87));
+  -webkit-filter: drop-shadow(5px 5px 50pxrgba(255, 158, 68, 0.192)));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
-  color: aliceblue;
   color: aliceblue;
 }

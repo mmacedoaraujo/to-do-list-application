@@ -39,12 +39,12 @@
 } 
 
 .finished-tasks {
+  color: #fff3e8;
   text-align: center;
   height: 50px;
   width: 100%;
   margin-top: 4rem;
   background: white;
-  color: black;
   border-radius: 30px;
   border: 0;
   cursor: pointer;
@@ -57,7 +57,6 @@
   -webkit-filter: drop-shadow(5px 5px 50px #2f288d41);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
-  color: aliceblue;
 }
 
 .finished-tasks:hover {
@@ -91,7 +90,7 @@ mat-label {
 }
 
 .buttons button {
-  color: rgb(255, 223, 174);
+  color: #fff3e8;
   justify-content: center;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
@@ -123,17 +122,17 @@ mat-card {
 }
 
 p {
-  color: rgb(255, 223, 174);
+  color: #fff3e8;
   padding: auto;
   font-weight: 300;
 }
 
 mat-card-title {
-  color: aliceblue;
+  color: #fff3e8;
 }
 
 mat-card-subtitle {
-  color: aliceblue;
+  color: #fff3e8;
 }
 
 .actions {
@@ -142,7 +141,7 @@ mat-card-subtitle {
 }
 
 .actions button {
-  color: rgb(255, 223, 174);
+  color: #fff3e8;
   margin-left: 10px;
   margin-bottom: 10px;
   background-color: rgba(95, 159, 255, 0);
