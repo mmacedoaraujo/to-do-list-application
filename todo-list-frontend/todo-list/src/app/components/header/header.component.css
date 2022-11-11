@@ -1,5 +1,5 @@
 .header {
-  height: 100px;
+  height: 150px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -20,12 +20,8 @@ h1 {
   margin-right: 10px;
   border-radius: 16px;
   padding: 10px;
-  background: linear-gradient(
-    300deg,
-    #2f288d69 0%,
-    #ff55555e 100%
-  );
-  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.87));
+  background-color: #243570;
+  -webkit-filter: drop-shadow(5px 5px 50px #2f288d41);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
 }

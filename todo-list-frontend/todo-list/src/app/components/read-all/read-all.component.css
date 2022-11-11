@@ -154,3 +154,20 @@ mat-card-subtitle {
   transition-duration: 800ms;
   color: aliceblue;
 }
+
+::ng-deep .mat-calendar {
+  background-color: #ee4949ea;
+  color: aliceblue;
+}
+
+::ng-deep .mat-calendar-body-label {
+  color: aliceblue;
+}
+
+::ng-deep .mat-calendar-body-cell-content {
+  color: aliceblue;
+}
+
+::ng-deep .mat-calendar-table-header {
+  color: aliceblue;
+}

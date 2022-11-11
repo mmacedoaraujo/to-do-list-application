@@ -22,27 +22,17 @@ body {
 ::-webkit-scrollbar {
   color: black;
   width: 10px;
+  background: linear-gradient(to bottom, #2f288db4 50%, #ff55559f 99%);
 }
 
 ::-webkit-scrollbar-track {
   border-radius: 2px;
-  background: linear-gradient(
-    to bottom,
-    rgb(236, 117, 6) 40%,
-    rgb(0, 38, 95)
-    
-  );
+  background-color: #2f288db4;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background: rgb(248, 142, 93);
-  
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(238, 103, 25);
+  background: rgba(214, 46, 34, 0.582);
 }
 
 body {
