@@ -15,7 +15,7 @@
 
 <h2>O que é o Projeto To-Do</h2>
 <p>Uma aplicação web com back-end desenvolvido em Java + Spring Boot e front-end em Angular, que tem como intuito gerenciar tarefas inseridas por um usuário. Cada tarefa consiste de uma data para finalizar especificada pelo usuário, um título e uma descrição opcional.</p>
-
+<img src="https://user-images.githubusercontent.com/103322548/201252379-481512f0-34c3-4821-989a-ed0dbfe912e7.png"></img>
 
 <h2>O que podemos fazer com a aplicação?</h2>
 <p>No atual momento podemos adicionar novas tarefas, editar e excluir tarefas já existentes.</p>
