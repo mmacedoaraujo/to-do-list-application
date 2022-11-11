@@ -37,24 +37,52 @@
 
 <p>Em seguida abra-o como projeto Maven em uma IDE</p>
 
+<p>Assim que o backend tiver rodando, você poderá acessar os endpoints através do endereço:</p>
+
+```
+ http://localhost:8080/todos
+```
+
+
 <h3>Rodando o frontend do projeto</h3>
 
-<p>Antes de seguir em frente, instale o <a href="https://nodejs.org/en/">Node.js</a>.</p>
+<h4>Instalando o Node</h4>
+<p>Antes de seguir em frente, instale o <a href="https://nodejs.org/en/">Node.js</a>. Mas atenção, na data de hoje (10/11/2022) a última versão LTS do Node (18.12.1) está gerando incompatibilidade com o projeto, recomendo baixar a versão 16 LTS do Node.</p>
 
 <p>Você pode verificar se o Node foi instalado na sua máquina executando o comando abaixo no terminal: </p>
 
 ```
  node --version
 ```
+<hr>
 
-<p>Após clonar o repositório na sua máquina, navegue para a pasta do frontend</h3>
+<h4>Executando o frontend</h4>
+
+<p>Após clonar o repositório na sua máquina, navegue para a pasta do frontend</p>
 
 ```
  cd todo-list-frontend
 ```
 
-<p>Agora vamos instalar o Command Line Interface ou CLI do Angular com o comando:</h3>
+<p>Agora vamos instalar o Command Line Interface ou CLI do Angular com o comando:</p>
 
 ```
  npm install -g @angular/cli
+```
+
+<p>Execute o comando abaixo para instalar as dependências do projeto:</p>
+
+```
+ npm install
+```
+<p>Agora subiremos o servidor local com:</p>
+
+```
+ npm serve
+```
+
+<p>E para acessar a aplicação é só inserir no navegador: </p>
+
+```
+ http://localhost:4200
 ```
