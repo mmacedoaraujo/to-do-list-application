@@ -1,8 +1,22 @@
 .footer {
-  position: static;
+  display: flex;
   justify-content: center;
+  width: 40%;
+  margin: auto;
   color: aliceblue;
-  bottom: 0;
-  background-color: rgba(6, 0, 65, 0.404);
-  
+  background-color: rgba(19, 9, 54, 0.397);
+  height: 5vh;
+  border-radius: 10px;
+  margin-top: 10vh;
+  padding-top: 15px;
+  background: linear-gradient(
+    270deg,
+    #ffc8b241,
+    rgba(38, 0, 143, 0.288),
+    #ff935580
+  );
+  border-radius: 16px;
+  backdrop-filter: blur(7.3px);
+  -webkit-backdrop-filter: blur(7.3px);
+  color: aliceblue;
 }

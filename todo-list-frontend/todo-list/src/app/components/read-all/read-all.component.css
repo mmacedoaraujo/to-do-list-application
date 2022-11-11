@@ -31,13 +31,12 @@
   cursor: pointer;
   background: linear-gradient(
     270deg,
-    #ff4800b2,
-    rgba(38, 0, 143, 0.288),
-    #fa7f38a1
+    #ffb2b241,
+    rgba(143, 21, 0, 0.137),
+    #ff555580
   );
-  border-radius: 16px;
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.664));
-  backdrop-filter: blur(7.3px);
+  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.87));
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
   color: aliceblue;
 }
@@ -67,7 +66,6 @@ mat-label {
   width: 80%;
 }
 
-
 .mat-badge-content {
   background: white;
   color: black;
@@ -83,10 +81,13 @@ mat-label {
   border: 0;
   background: linear-gradient(
     270deg,
-    #ff4800b2,
-    rgba(38, 0, 143, 0.288),
-    #fa7f38a1
+    #ffb2b200,
+    #ff555500
   );
+  border-radius: 30px;
+  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.87));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(7.3px);
 }
 
 mat-card {
@@ -96,12 +97,12 @@ mat-card {
   padding-left: 2rem;
   background: linear-gradient(
     270deg,
-    #ff4800b2,
-    rgba(38, 0, 143, 0.288),
-    #fa7f38a1
+    #ffb2b241,
+    rgba(143, 21, 0, 0.137),
+    #ff555580
   );
   border-radius: 30px;
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(1, 12, 167, 0.445));
+  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.87));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
 }

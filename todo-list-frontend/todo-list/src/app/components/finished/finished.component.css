@@ -21,13 +21,13 @@
   cursor: pointer;
   background: linear-gradient(
     270deg,
-    #ffc8b241,
-    rgba(38, 0, 143, 0.288),
-    #ff935580
+    #ffb2b241,
+    rgba(143, 21, 0, 0.137),
+    #ff555580
   );
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(151, 0, 0, 0.1);
-  backdrop-filter: blur(7.3px);
+  border-radius: 30px;
+  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.87));
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
   color: aliceblue;
 }
@@ -45,14 +45,22 @@ mat-card {
   padding: 1rem;
   background: linear-gradient(
     270deg,
-    #ffc8b241,
-    rgba(38, 0, 143, 0.288),
-    #ff935580
+    #ffb2b241,
+    rgba(143, 21, 0, 0.137),
+    #ff555580
   );
   border-radius: 30px;
-  box-shadow: 0 4px 30px rgba(151, 0, 0, 0.1);
+  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.87));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
+  color: aliceblue;
+}
+
+mat-card-title {
+  color: aliceblue;
+}
+
+mat-card-subtitle {
   color: aliceblue;
 }
 
@@ -64,6 +72,6 @@ h1 {
 p {
   text-align: end;
   font-weight: 300;
-  color: rgb(114, 111, 111);
+  color: rgb(255, 255, 255);
   margin-bottom: 0;
 }
