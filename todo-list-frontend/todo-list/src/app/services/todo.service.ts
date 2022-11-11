@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { Observable } from "rxjs";
 import { environment } from "src/environments/environment";
-import { Todo } from "../models/todo";
+import { Todo } from '../models/todo';
 
 @Injectable({
   providedIn: "root",
@@ -33,6 +33,9 @@ export class TodoService {
   }
 
   create(todo: Todo): Observable<Todo> {
+    if(todo.dateToFinishTask === "30/11/0002") {
+      todo.dateToFinishTask = new Date();
+    }
     return this.http.post<Todo>(this.baseUrl, todo);
   }
 

@@ -24,8 +24,8 @@ export class ReadAllComponent implements OnInit {
   constructor(private service: TodoService, private router: Router) {}
 
   ngOnInit(): void {
+    this.todo.dateToFinishTask = new Date();
     this.findAll();
-    this.refreshPage();
   }
 
   findAll(): void {
@@ -64,14 +64,15 @@ export class ReadAllComponent implements OnInit {
     this.service.create(this.todo).subscribe(
       (answer) => {
         this.service.message("New task added successfully");
-        this.clear();
+        setTimeout(() => {
+          window.location.reload();
+        }, 3000);
       },
       (err) => {
         this.service.message("Failed to create new task");
         this.clear();
       }
     );
-    window.location.reload();
   }
 
   clear() {
@@ -89,9 +90,5 @@ export class ReadAllComponent implements OnInit {
 
   navigateToFinishedTasks(): void {
     this.router.navigate(["finished"]);
-  }
-
-  refreshPage(): void {
-    this.router.navigate([""]);
   }
 }
