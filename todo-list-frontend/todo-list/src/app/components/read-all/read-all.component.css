@@ -19,6 +19,25 @@
   width: 100%;
 }
 
+.new-task-container mat-card{
+  margin-top: 1rem;
+  background: white;
+  color: black;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  background: linear-gradient(
+    270deg,
+    #2f288d41,
+    rgba(143, 21, 0, 0.137),
+    #ff555580
+  );
+  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(7.3px);
+  color: aliceblue;
+} 
+
 .finished-tasks {
   text-align: center;
   height: 50px;
@@ -26,12 +45,12 @@
   margin-top: 4rem;
   background: white;
   color: black;
-  border-radius: 10px;
+  border-radius: 30px;
   border: 0;
   cursor: pointer;
   background: linear-gradient(
     270deg,
-    #ffb2b241,
+    #2f288d41,
     rgba(143, 21, 0, 0.137),
     #ff555580
   );
@@ -43,7 +62,7 @@
 
 .finished-tasks:hover {
   transition-duration: 2s;
-  background-color: rgba(227, 212, 255, 0.904);
+  background-color: rgba(255, 255, 255, 0.082);
 }
 
 mat-datepicker-toggle {
@@ -79,13 +98,9 @@ mat-label {
   width: 100%;
   border-radius: 10px;
   border: 0;
-  background: linear-gradient(
-    270deg,
-    #ffb2b200,
-    #ff555500
-  );
+  background-color: transparent;
   border-radius: 30px;
-  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.87));
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(255, 158, 68, 0));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
 }
@@ -97,7 +112,7 @@ mat-card {
   padding-left: 2rem;
   background: linear-gradient(
     270deg,
-    #ffb2b241,
+    #2f288d41,
     rgba(143, 21, 0, 0.137),
     #ff555580
   );

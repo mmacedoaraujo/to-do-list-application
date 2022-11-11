@@ -1,22 +1,24 @@
 .footer {
   display: flex;
   justify-content: center;
-  width: 40%;
+  width: 20%;
   margin: auto;
   color: aliceblue;
-  background-color: rgba(19, 9, 54, 0.397);
   height: 5vh;
   border-radius: 10px;
-  margin-top: 10vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   padding-top: 15px;
   background: linear-gradient(
     270deg,
-    #ffc8b241,
-    rgba(38, 0, 143, 0.288),
-    #ff935580
+    #2f288d41,
+    rgba(143, 21, 0, 0.137) 100%,
+    #ff555580
   );
-  border-radius: 16px;
-  backdrop-filter: blur(7.3px);
+  border-radius: 30px;
+  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.87));
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.3px);
+  color: aliceblue;
   color: aliceblue;
 }

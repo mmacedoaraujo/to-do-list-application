@@ -21,7 +21,7 @@
   cursor: pointer;
   background: linear-gradient(
     270deg,
-    #ffb2b241,
+    #2f288d41,
     rgba(143, 21, 0, 0.137),
     #ff555580
   );
@@ -45,7 +45,7 @@ mat-card {
   padding: 1rem;
   background: linear-gradient(
     270deg,
-    #ffb2b241,
+    #2f288d41,
     rgba(143, 21, 0, 0.137),
     #ff555580
   );
