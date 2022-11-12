@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: auto;
+  height: 5vh;
+  border-radius: 10px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding-top: 15px;
+  background: linear-gradient(200deg, #2f288d6c 0%, #ee494980 70%);
+  border-radius: 30px;
+  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0.192));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(7.3px);
+  color: aliceblue;
+}

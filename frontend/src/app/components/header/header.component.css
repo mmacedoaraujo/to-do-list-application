@@ -1,0 +1,35 @@
+.header {
+  height: 150px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  background-color: transparent;
+  border-radius: 16px;
+  color: aliceblue;
+  
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+.clock {
+  color: #ffe9d3;
+  margin-right: 10px;
+  border-radius: 16px;
+  padding: 10px;
+  background: linear-gradient(200deg, #2f288d6c 20%, #ee4949d8 70%);
+  -webkit-filter: drop-shadow(5px 5px 50px #2f288d41);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(7.3px);
+}
+
+img {
+  -webkit-filter: drop-shadow(5px 5px 10px rgb(14, 17, 63));
+  margin-left: 6rem;
+  margin-top: 5rem;
+  width: 200px;
+  height: 200px;
+}
