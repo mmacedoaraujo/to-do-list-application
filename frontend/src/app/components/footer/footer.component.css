@@ -13,16 +13,6 @@
   padding: 1rem 0.5rem 0.5rem 0.5rem;
   border-radius: 16px;
   margin: 2rem 0 1rem 0;
-  background: linear-gradient(
-    330deg,
-    #2f288d41,
-    rgba(143, 21, 0, 0.137),
-    #ff555598 99%
-  );
-
-  -webkit-filter: drop-shadow(5px 5px 50px #2f288d41);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(7.3px);
 }
 .bottom :any-link {
   color: aliceblue;
