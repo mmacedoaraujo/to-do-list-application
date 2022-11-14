@@ -1,7 +1,9 @@
 .footer {
+  overflow-wrap: break-word;
   display: flex;
   justify-content: center;
-  width: 40%;
+  align-items: center;
+  width: 50%;
   margin: auto;
   height: 5vh;
   border-radius: 10px;

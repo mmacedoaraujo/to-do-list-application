@@ -66,7 +66,7 @@ export class ReadAllComponent implements OnInit {
         this.service.message("New task added successfully");
         setTimeout(() => {
           window.location.reload();
-        }, 3000);
+        }, 500);
       },
       (err) => {
         this.service.message("Failed to create new task");

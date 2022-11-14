@@ -33,9 +33,6 @@ export class TodoService {
   }
 
   create(todo: Todo): Observable<Todo> {
-    if(todo.dateToFinishTask === "30/11/0002") {
-      todo.dateToFinishTask = new Date();
-    }
     return this.http.post<Todo>(this.baseUrl, todo);
   }
 

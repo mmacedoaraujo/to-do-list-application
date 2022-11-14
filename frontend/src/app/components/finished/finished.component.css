@@ -56,13 +56,20 @@ mat-card {
   color: aliceblue;
 }
 
+mat-card-header {
+  padding-right: 40%;
+}
+
 mat-card-title {
   color: #fff3e8;
+  padding-right: 5%;
+  padding-left: 2%;
+  padding-bottom: 1rem;
 }
 
 mat-card-subtitle {
   color: #fff3e8;
-  padding-right: 40%;
+  padding-right: 5%;
   padding-left: 2%;
 }
 
