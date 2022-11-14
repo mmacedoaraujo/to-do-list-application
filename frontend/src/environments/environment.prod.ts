@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  baseUrl: 'https://todo-backend-production-4074.up.railway.app/todos'
 };

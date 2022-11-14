@@ -88,6 +88,13 @@ export class ReadAllComponent implements OnInit {
     }/${date.getFullYear()}`;
   }
 
+  getFinishDate(): void {
+    let date = new Date();
+    this.todo.dateToFinishTask = `${date.getDate()}/${
+      date.getMonth() + 1
+    }/${date.getFullYear()}`;
+  }
+
   navigateToFinishedTasks(): void {
     this.router.navigate(["finished"]);
   }

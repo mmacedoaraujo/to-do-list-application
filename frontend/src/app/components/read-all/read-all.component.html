@@ -4,12 +4,12 @@
     (click)="navigateToFinishedTasks()"
     matBadge="{{ closed }}"
   >
-    Finished Tasks
+    Tasks finalizadas
   </button>
   <div class="new-task-container">
     <mat-card class="example-card mat-elevation-z8">
       <mat-form-field class="date-to-finish" appearance="fill">
-        <mat-label>Insert a date</mat-label>
+        <mat-label>Insira uma data</mat-label>
         <input
           [(ngModel)]="todo.dateToFinishTask"
           name="todo.dateToFinishTask"
@@ -24,7 +24,7 @@
 
       <div class="forms">
         <mat-form-field class="form-title" appearance="fill">
-          <mat-label>Title</mat-label>
+          <mat-label>Título</mat-label>
           <input
             [(ngModel)]="todo.title"
             name="todo.title"
@@ -34,18 +34,16 @@
         </mat-form-field>
 
         <mat-form-field class="form-description" appearance="fill">
-          <mat-label>Description</mat-label>
-          <input
-            [(ngModel)]="todo.description"
-            name="todo.description"
-            type="text"
-            matInput
-          />
+          <mat-label>Descrição</mat-label>
+          <textarea [(ngModel)]="todo.description"
+          name="todo.description"
+          type="text"
+          matInput></textarea>
         </mat-form-field>
       </div>
       <div class="buttons">
         <button (click)="create()" mat-stroked-button color="primary">
-          Create
+          Criar
         </button>
         <button
           (click)="clear()"
@@ -53,7 +51,7 @@
           mat-stroked-button
           color="warn"
         >
-          Cancel
+          Cancelar
         </button>
       </div>
     </mat-card>
@@ -62,7 +60,7 @@
   <div class="content" *ngFor="let item of list">
     <mat-card class="example-card mat-elevation-z8">
       <mat-card-title>{{ item.title }}</mat-card-title>
-      <p>Date to finish: {{ item.dateToFinishTask }}</p>
+      <p>Data para finalizar: {{ item.dateToFinishTask }}</p>
       <mat-card-subtitle>{{ item.description }}</mat-card-subtitle>
 
       <div class="actions">

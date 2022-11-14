@@ -17,6 +17,7 @@
 
 .content {
   width: 100%;
+  overflow-wrap: break-word;
 }
 
 .new-task-container mat-card{
@@ -129,10 +130,12 @@ p {
 
 mat-card-title {
   color: #fff3e8;
+  padding-right: 40%;
 }
 
 mat-card-subtitle {
   color: #fff3e8;
+  padding-right: 40%;
 }
 
 .actions {

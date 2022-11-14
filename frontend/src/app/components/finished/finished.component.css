@@ -4,7 +4,9 @@
 }
 
 .content {
-  width: 100%;
+  margin: auto;
+  width: 75%;
+  overflow-wrap: break-word;
 }
 
 .home {
@@ -39,9 +41,8 @@
 
 mat-card {
   margin-top: 0.8rem;
-  padding: 0.2rem;
   margin-top: 0.8rem;
-  padding: 1rem;
+  padding-bottom: 3rem;
   background: linear-gradient(
     270deg,
     #2f288d41,
@@ -56,11 +57,13 @@ mat-card {
 }
 
 mat-card-title {
-  color: aliceblue;
+  color: #fff3e8;
 }
 
 mat-card-subtitle {
-  color: aliceblue;
+  color: #fff3e8;
+  padding-right: 40%;
+  padding-left: 2%;
 }
 
 h1 {
@@ -69,8 +72,8 @@ h1 {
 }
 
 p {
-  text-align: end;
+  text-align: center;
   font-weight: 300;
   color: rgb(255, 255, 255);
-  margin-bottom: 0;
+  padding-bottom: 1rem;
 }
