@@ -174,3 +174,9 @@ mat-card-subtitle {
 ::ng-deep .mat-calendar-table-header {
   color: aliceblue;
 }
+
+.form-description {
+  width: 95%;
+  size: 200px;
+  color: aliceblue;
+}
