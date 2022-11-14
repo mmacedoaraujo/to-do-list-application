@@ -1,5 +1,4 @@
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
-import { DateAdapter } from "@angular/material/core";
 import { Router } from "@angular/router";
 import { Todo } from "src/app/models/todo";
 import { TodoService } from "src/app/services/todo.service";
@@ -22,9 +21,7 @@ export class ReadAllComponent implements OnInit {
   description: string = "";
   value: any;
 
-  constructor(private service: TodoService, private router: Router, private dateAdapter: DateAdapter<Date>) {
-    this.dateAdapter.setLocale('pt-BR')
-  }
+  constructor(private service: TodoService, private router: Router) {}
 
   ngOnInit(): void {
     this.todo.dateToFinishTask = new Date();
