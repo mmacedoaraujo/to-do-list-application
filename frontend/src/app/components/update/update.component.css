@@ -39,10 +39,13 @@ mat-label {
 
 .form-title {
   width: 60%;
+  color: aliceblue;
 }
 
 .form-description {
-  width: 80%;
+  width: 95%;
+  size: 200px;
+  color: aliceblue;
 }
 
 .buttons button {
