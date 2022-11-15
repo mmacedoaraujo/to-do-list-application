@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="frontend" />
         <module name="todo-list" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="frontend" target="1.5" />
+      <module name="to-do-list-application" target="1.8" />
       <module name="todo-list" target="11" />
     </bytecodeTargetLevel>
   </component>
