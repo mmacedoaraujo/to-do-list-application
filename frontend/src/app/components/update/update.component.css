@@ -1,24 +1,23 @@
 .container {
   width: 75%;
   margin: auto;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 mat-card {
-  margin-top: 0.8rem;
   margin-bottom: 0.8rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-left: 2rem;
   background: linear-gradient(
     270deg,
-    #2f288d41,
+    #2f288d9d,
     rgba(143, 21, 0, 0.137),
-    #ff555580
+    #ff5555cb
   );
-  border-radius: 30px;
-  -webkit-filter: drop-shadow(5px 5px 50px #2f288d41);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(7.3px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.37);
 }
 
 mat-card-title {
@@ -49,16 +48,13 @@ mat-label {
 }
 
 .buttons button {
- color: #fff3e8;
+  color: #fff3e8;
   justify-content: center;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
   width: 100%;
   border-radius: 10px;
   border: 0;
-  background-color: transparent;
-  border-radius: 30px;
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(255, 158, 68, 0));
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(7.3px);
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.37);
+
 }

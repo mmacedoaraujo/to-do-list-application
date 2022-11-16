@@ -20,7 +20,7 @@
   overflow-wrap: break-word;
 }
 
-.new-task-container mat-card{
+.new-task-container mat-card {
   margin-top: 1rem;
   background: white;
   color: black;
@@ -29,15 +29,16 @@
   cursor: pointer;
   background: linear-gradient(
     270deg,
-    #2f288d41,
+    #2f288d9d,
     rgba(143, 21, 0, 0.137),
-    #ff555580
+    #ff5555cb
   );
-  -webkit-filter: drop-shadow(5px 5px 50px rgba(255, 158, 68, 0));
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(7.3px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.37);
   color: aliceblue;
-} 
+}
 
 .finished-tasks {
   color: #fff3e8;
@@ -51,13 +52,14 @@
   cursor: pointer;
   background: linear-gradient(
     270deg,
-    #2f288d41,
+    #2f288d9d,
     rgba(143, 21, 0, 0.137),
-    #ff555580
+    #ff5555cb
   );
-  -webkit-filter: drop-shadow(5px 5px 50px #2f288d41);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(7.3px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.37);
 }
 
 .finished-tasks:hover {
@@ -97,12 +99,7 @@ mat-label {
   margin-bottom: 0.5rem;
   width: 100%;
   border-radius: 10px;
-  border: 0;
-  background-color: transparent;
-  border-radius: 30px;
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(255, 158, 68, 0));
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(7.3px);
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.37);
 }
 
 mat-card {
@@ -112,14 +109,14 @@ mat-card {
   padding-left: 2rem;
   background: linear-gradient(
     270deg,
-    #2f288d41,
+    #2f288d9d,
     rgba(143, 21, 0, 0.137),
-    #ff555580
+    #ff5555cb
   );
-  border-radius: 30px;
-  -webkit-filter: drop-shadow(5px 5px 50px #2f288d41);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(7.3px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.37);
 }
 
 p {
@@ -147,10 +144,8 @@ mat-card-subtitle {
   color: #fff3e8;
   margin-left: 10px;
   margin-bottom: 10px;
-  background-color: rgba(95, 159, 255, 0);
+  background-color: rgba(0, 102, 255, 0);
   border-radius: 20px;
-  backdrop-filter: blur(12.4px);
-  -webkit-backdrop-filter: blur(12.4px);
 }
 
 .actions button :hover {

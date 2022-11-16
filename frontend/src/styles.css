@@ -2,10 +2,11 @@
 html,
 body {
   background: url("assets/img/background.jpg");
+  background-position: 0% 100%;
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   animation: moveIt 200s linear infinite;
 }
 
